@@ -1,11 +1,9 @@
 const button = document.querySelector("button");
-const input1 = document.getElementById("firstNumber");
-const input2 = document.getElementById("secondNumber");
+const input1 = document.getElementById("firstNumber") as HTMLInputElement;
+const input2 = document.getElementById("secondNumber") as HTMLInputElement;
 
-function add(a,b){
-    return a+b;
-}
-function betterAdd(a,b){
+
+function betterAdd(a: number,b: number){
     if (typeof a === "number" && typeof b === "number"){
         return a+b;
     } else
@@ -13,5 +11,5 @@ function betterAdd(a,b){
 }
 
 button.addEventListener("click", function(){
-    console.log(betterAdd(input1.value,input2.value));
+    console.log(betterAdd(+input1.value,+input2.value));
 });
