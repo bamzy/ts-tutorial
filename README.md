@@ -10,9 +10,7 @@ This is my hands-on TS coding by using VS Code.
 
 ## Why TS?
 1- less error
-
 2- compile time error/validations/sanitize
-
 3- explicit types and a push toward static typed js language 
 
 ## Install:
@@ -23,17 +21,31 @@ This is my hands-on TS coding by using VS Code.
 ## TypeScript Syllabus:
 
 1- Types become essintial here.
-
 2- IDE integration is a real blessing.
-
 3- We can use next-gen JS features that are then compiled down for older browser compatibility.
-
 4- Non-javascript features like **Classes**, **Interfaces** and **Generics** are also added to JS via TS.
-
 5- Meta-programming features like **Decorators**, **Namespaces**, **Modules** 
-
 6- Webpack
-
 7- Rich configuration options.
-
 8- Modern tooling is even usefull if you are not using other TS features.
+
+
+## Usefull VSCode Plugins:
+* Prettier
+* Lite-server
+* ESLint
+* Material Icon Theme
+* Path Intellisense
+* Markdown Preview
+
+### How to install lite-server
+1- npm install lite-server
+2- Edit  package.json and add the code below to script field of the object
+```javascript
+ "start": "lite-server"
+```
+3- Then run:
+```npm
+ npm start 
+ ```
+ 
