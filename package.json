@@ -1,0 +1,23 @@
+{
+  "name": "ts-tutorial",
+  "version": "1.0.0",
+  "description": "This is my hands-on TS coding by using VS Code.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-servernp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamzy/ts-tutorial.git"
+  },
+  "author": "Bamdad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bamzy/ts-tutorial/issues"
+  },
+  "homepage": "https://github.com/bamzy/ts-tutorial#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
