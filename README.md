@@ -77,7 +77,16 @@ This is my hands-on TS coding by using VS Code.
  ```javascript
  enum ROLES {ADMIN, READ_ONLY, WRITE};
  enum ROLES {ADMIN = 4, READ_ONLY = 5, WRITE = 6};
-if (person.role == ROLES.ADMIN) 
+if (person.role == ROLES.ADMIN) ...
+```
 
- ```
- 8- any: this is how js used to behave
+8- **union** types:
+```javascript
+const a : number | string
+```
+10- **literal** types:
+```javascript
+function combine(input1: number, input2: number, showFlag: 'A' | 'B')
+```
+
+9- **any** type: this is how JS already behaves.
