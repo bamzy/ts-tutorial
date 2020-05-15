@@ -11,3 +11,5 @@ function betterAdd(a: number, b: number) {
 button.addEventListener("click", function () {
   console.log(betterAdd(+input1.value, +input2.value));
 });
+
+

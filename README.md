@@ -48,4 +48,36 @@ This is my hands-on TS coding by using VS Code.
 ```npm
  npm start 
  ```
- 
+
+
+
+ ## Core Types TS introduced:
+ 1- **number**: includes int, double, floats 
+ 2- **string**: all text values
+ 3- **boolean**: true or false
+ 4- **arrays**: 
+ ```javascript 
+ a : strin[]; b: number[]
+ ```
+ 5- **object**: 
+ ```javascript 
+ const Person : {age:number, name:string} = {
+     age : 10
+     name: 'bamzy'
+ }
+ ```
+ 6- **tuples**: 
+ ```javascript
+ const person : 
+ {roles: [number,string]} = {
+     roles: [1,'admin']
+ } 
+ ```
+ 7- **enumeration**:
+ ```javascript
+ enum ROLES {ADMIN, READ_ONLY, WRITE};
+ enum ROLES {ADMIN = 4, READ_ONLY = 5, WRITE = 6};
+if (person.role == ROLES.ADMIN) 
+
+ ```
+ 8- any: this is how js used to behave
