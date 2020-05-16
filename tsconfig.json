@@ -67,6 +67,10 @@
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
   "exculde": [
-    "node_modules"
+    "node_modules",
+    "sample.ts"
+  ],
+  "include": [
+    "using-ts.ts",
   ]
 }
