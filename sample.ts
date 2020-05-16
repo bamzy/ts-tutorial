@@ -1,6 +1,6 @@
 let callback = () => {};
 
-function containsAOSNode(nodes) {
+function containsAOSNode(nodes: [object]) {
   let i, currentNode, result;
 
   for (i = 0; i < nodes.length; i += 1) {
@@ -46,7 +46,7 @@ function isSupported() {
   return !!getMutationObserver();
 }
 
-function ready(selector, fn) {
+function ready(selector: any, fn: any) {
   const doc = window.document;
   const MutationObserver = getMutationObserver();
 

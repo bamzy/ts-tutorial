@@ -1,4 +1,4 @@
-const button = document.querySelector("button");
+const button = document.querySelector("button") as HTMLButtonElement;
 const input1 = document.getElementById("firstNumber") as HTMLInputElement;
 const input2 = document.getElementById("secondNumber") as HTMLInputElement;
 
