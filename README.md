@@ -84,9 +84,44 @@ if (person.role == ROLES.ADMIN) ...
 ```javascript
 const a : number | string
 ```
-10- **literal** types:
+9- **literal** types:
 ```javascript
 function combine(input1: number, input2: number, showFlag: 'A' | 'B')
 ```
 
-9- **any** type: this is how JS already behaves.
+10- **any** type: this is how JS already behaves.
+11- return types including **void**, **undefined**, **unknown**, **never** and **Function**:
+```javascript
+ function dummy1(num1: number): void {
+   ...  
+ }
+
+let x : undefined;
+let someFunc : Function;
+
+//This si a case of using never return type
+function generateError(err: string): never {
+    throw {message: err, errorCode: 404};
+}
+```
+
+12- Function types:
+you can even tell what kind of function signature a variable should expect 
+```javascript
+var rightSignature = function(input: number) : string {
+    return number.toString();
+}
+var wrongSignature = function(input: string) : string {
+    return number.toString();
+}
+let funcVariable: (a:number, b: number) => string; 
+//Now this is allowed
+funcVariable = rightSignature;
+//And this is not!
+funcVariable = wrongSignature;
+```
+## Type alias
+you can define your own composition of types
+```javascript
+type Combinable = number | string | boolean | 'A';
+```
