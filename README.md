@@ -152,3 +152,14 @@ Now you can just run
 2- targets:
 **es5** is for older browsers
 when nothing is specified it means **es3** 
+
+3- TS can even check your vanilla js files for you
+```json
+"allowJs": true,     /* Allow javascript files to be compiled. */
+"checkJs": true,     /* Report errors in .js files. */
+```
+
+4- You can use sourceMap which allows you to debug .ts file in browser
+```json
+"sourceMap": true,   /* Generates corresponding '.map' file. */
+```
