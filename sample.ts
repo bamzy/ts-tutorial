@@ -1,6 +1,6 @@
 let callback = () => {};
 
-function containsAOSNode(nodes: [object]) {
+function containsAOSNode(nodes: [{dataset:any,children:any}]) {
   let i, currentNode, result;
 
   for (i = 0; i < nodes.length; i += 1) {
@@ -22,7 +22,6 @@ function containsAOSNode(nodes: [object]) {
 
 function check(mutations: [any] ) {
   if (!mutations) return;
-
   mutations.forEach(mutation => {
     const addedNodes = Array.prototype.slice.call(mutation.addedNodes);
     const removedNodes = Array.prototype.slice.call(mutation.removedNodes);

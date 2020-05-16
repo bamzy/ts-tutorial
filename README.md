@@ -125,3 +125,30 @@ you can define your own composition of types
 ```javascript
 type Combinable = number | string | boolean | 'A';
 ```
+
+## Better use of compiler
+You can enter TS compiler to watch mode by using this command:
+```shell
+>tsc [filename] --watch/-w
+```
+You can also compile multiple files by running this command in your working project directory:
+```shell
+> tsc --init
+```
+Which creates a tsconfig.json file in your projcect.
+Now you can just run
+```shell
+> tsc --watch
+```
+
+
+## Compiler Options:
+1- you can exclude file
+```json
+    "exclude" : {
+        "filename/foldername"
+    }
+```
+2- targets:
+**es5** is for older browsers
+when nothing is specified it means **es3** 
